@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="./libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/jquery.mloading-master/src/jquery.mloading.css">
+    <script src="./libs/jquery.js"></script>
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./libs/jquery.mloading-master/src/jquery.mloading.js"></script>
+    <script src="./libs/layer-v3.1.1/layer/layer.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            height: 585px;
+            background-image: url("http://desk.fd.zol-img.com.cn/t_s960x600c5/g5/M00/0B/07/ChMkJ1Zg-cmIetzvAAOwWURtLEwAAFtJwJNmHcAA7Bx767.jpg");
+            background-size: 100% 100%;
+        }
+        .div{
+            /* height: 570px; */
+            padding: 20px 60px;
+            margin-top: 8px;
+            display: none;
+            background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537776043875&di=3c0e7678bf304693e712b4e6f8d41cbc&imgtype=0&src=http%3A%2F%2Fgss0.baidu.com%2F9fo3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2Fca1349540923dd54bc4324d7d309b3de9c824859.jpg");
+            background-size: 100% 100%;
+            color: wheat;
+            font-size: 15px;
+        }
+        .form-control-static{
+            color: lightgray;
+            display: inline-block;
+            margin-left: 20px;
+            width: 400px;
+        }
+        .head_img{
+            width: 80px;
+            height: 80px;
+            /* background-color: red; */
+            border-radius: 50%;
+            /* vertical-align:middle  */
+        }
+        .head_img img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-xs-12 col-md-10 col-md-offset-1 div">
+            <form>
+                <legend style=" color: wheat;font-size: 25px;">个人资料</legend>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">账号:</label>
+                    <p class="form-control-static email"></p>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">昵称:</label>
+                    <p class="form-control-static name"></p>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">头像:</label>
+                    <input type="file" id="exampleInputFile" style="display:none">
+                    <p class="form-control-static">
+                        <img class="head_img" src="./image/上传图片.png" alt="">
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputSex">性别:</label>
+                    <p class="form-control-static sex"></p>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputhHobby">爱好:</label>
+                    <p class="form-control-static hobby"></p>
+                    </div>
+                <div class="form-group">
+                    <label for="exampleInputSignature">签名:</label>
+                    <p class="form-control-static signature"></p>
+                </div>
+                <button type="button" class="btn btn-default">修改资料</button>
+                <button type="button" style="display:none;" class="btn btn-primary">提交</button>
+              </form>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./js/userinfo.js"></script>
